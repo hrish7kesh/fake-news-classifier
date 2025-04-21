@@ -36,11 +36,6 @@ python main.py
 
 ---
 
-Once you’re done, commit it:
-```bash
-git add README.md
-git commit -m "Added initial README"
-git push
 
 ## 📥 Dataset
 
