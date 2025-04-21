@@ -41,3 +41,8 @@ Once you’re done, commit it:
 git add README.md
 git commit -m "Added initial README"
 git push
+
+## 📥 Dataset
+
+This project uses the [Fake and Real News Dataset from Kaggle](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets).  
+Download the dataset and place 'fake.csv' and 'true.csv' inside the 'News_dataset/' folder.
