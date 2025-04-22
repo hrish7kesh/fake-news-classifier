@@ -1,43 +1,51 @@
-# 📰 Fake News Classifier
+# 📰 Fake News Detection Using NLP & Machine Learning
 
-A machine learning project to detect fake vs real news using NLP and Python.  
-Currently supports data loading, preprocessing, and training with TF-IDF and Passive Aggressive Classifier.
+A machine learning pipeline to detect whether a news article is **real or fake**, built using NLP techniques and real-world news data.
 
----
+## ✅ Features
+- Real + Fake news datasets merged from Kaggle
+- Text cleaning (lowercasing, stopwords, punctuation removal)
+- TF-IDF vectorization for feature extraction
+- Trained using PassiveAggressiveClassifier
+- Model evaluation with accuracy, F1-score, and confusion matrix
+- Clean, modular Python scripts
 
-## ✅ Current Features
-- ✅ Load and merge real/fake news datasets
-- ✅ Clean and preprocess text (remove stopwords, punctuation, etc.)
-- ✅ Train a basic ML classifier (TF-IDF + PassiveAggressiveClassifier)
-
----
-
-## 🛠 Tech Stack
+## 🧠 Tech Stack
 - Python
-- Pandas
-- NLTK
-- Scikit-learn
-
----
-
-## 🧠 Upcoming Features
-- [ ] Evaluation metrics and confusion matrix
-- [ ] Streamlit UI for live predictions
-- [ ] Model improvement with BERT or LSTM
-- [ ] Deployment to Streamlit Cloud or HuggingFace Spaces
-
----
+- scikit-learn
+- pandas, numpy
+- nltk
+- matplotlib, seaborn
+- [Optional] Streamlit
 
 ## 🚀 How to Run
 
+1. Clone the repo:
 ```bash
+git clone https://github.com/hrish7kesh/fake-news-classifier.git
+cd fake-news-classifier
+
+2. Install dependencies:
 pip install -r requirements.txt
+
+3. Download the dataset from Kaggle:
+https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets
+Place Fake.csv and True.csv inside a folder called News_dataset/
+
+4. Run the project:
 python main.py
+
+## 📈 Output Sample
+
+- ✅ Accuracy: ~94%
+- 📊 Classification report with precision, recall, and F1-score
+- 🧩 Confusion matrix displayed using Seaborn heatmap
+- 💾 Trained model saved as `models/fake_news_model.pkl`
 
 ---
 
+## 🚧 Future Work
 
-## 📥 Dataset
-
-This project uses the [Fake and Real News Dataset from Kaggle](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets).  
-Download the dataset and place 'fake.csv' and 'true.csv' inside the 'News_dataset/' folder.
+- 🔧 Add Streamlit interface for user input and live predictions
+- 🤖 Experiment with transformer models (e.g., BERT via HuggingFace)
+- 🌍 Extend to multilingual or multi-platform news datasets
