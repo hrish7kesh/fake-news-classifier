@@ -24,6 +24,7 @@ A machine learning pipeline to detect whether a news article is **real or fake**
 ```bash
 git clone https://github.com/hrish7kesh/fake-news-classifier.git
 cd fake-news-classifier
+```
 
 2. Install dependencies:
 pip install -r requirements.txt
